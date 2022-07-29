@@ -1,0 +1,14 @@
+--Create store database with inquiries
+
+CREATE TABLE clothes (id INTEGER PRIMARY KEY, color TEXT, item TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO clothes VALUES(1, "black", "shirt", 10, 35);
+INSERT INTO clothes VALUES(2, "orange", "hoodie", 6, 52);
+INSERT INTO clothes VALUES(3, "blue", "leggings", 12, 28);
+INSERT INTO clothes VALUES(4, "red", "hat", 8, 20);
+
+--Order store items by price
+SELECT * FROM clothes ORDER BY price;
+
+--Find average price of of store items
+SELECT AVG(price) FROM clothes
